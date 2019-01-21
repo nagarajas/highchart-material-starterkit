@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomMaterialModuleModule } from "./custom-material-module/custom-material-module.module";
+
+import { HighchartsChartModule } from 'highcharts-angular';
+
 import { LayutComponent } from './layut/layut.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatInputModule, MatSelectModule, MatRadioModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
@@ -12,6 +15,7 @@ import { MaindashboardComponent } from './maindashboard/maindashboard.component'
 import { AddressFormComponent } from './address-form/address-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TableLayoutComponent } from './table-layout/table-layout.component';
+import { StockComponent } from './stock/stock.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +23,15 @@ import { TableLayoutComponent } from './table-layout/table-layout.component';
     LayutComponent,
     MaindashboardComponent,
     AddressFormComponent,
-    TableLayoutComponent
+    TableLayoutComponent,
+    StockComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CustomMaterialModuleModule,
+    HighchartsChartModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
